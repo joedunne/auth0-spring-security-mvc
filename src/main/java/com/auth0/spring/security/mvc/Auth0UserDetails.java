@@ -104,6 +104,10 @@ public class Auth0UserDetails implements UserDetails {
         return identities;
     }
 
+    public Map<String, Object> getExtraInfo() {
+        return extraInfo;
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return authorities;
